@@ -1,0 +1,130 @@
+
+    .nav-list {
+        ul {
+            display: flex;
+            // margin-top: 2vh;
+
+            
+        }
+    }
+
+.Nav{
+.navbar{
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center;
+    margin: 0 5vw;
+    .logo{
+    img{
+        width: 60px !important;
+    }}
+    ul{
+        margin-right: 3vw;
+    li {
+        list-style: none;
+
+        a{
+            margin: 0 1vw;
+            padding: 1vh 3vw;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                border-radius: 4px;
+                background-color: $color-gray-mid;
+                bottom: 0;
+                left: 0;
+                transform: scaleX(0);
+                transition: transform .3s ease-in-out;
+            }
+            &:hover::before{
+                transform: scaleX(1);
+
+            }
+            &:hover{
+                color: $color-black;
+                transform: scale(1.1);
+            }
+
+        }
+        .dropdown-menu{
+            background-color: transparent;
+            border: none;
+            a{
+                background-color: $color-gray-very-light;
+                &:hover{
+                    transform: scale3d(2);
+                    width: 100%;
+                    text-align: center;
+                    background-color: $color-white;
+
+                }
+
+            }
+        }
+    }
+    }
+}
+}
+
+@media only screen and (max-width: 992px){
+    .Nav{
+        .navbar{
+            button{
+                margin-left: 70vw !important;
+            }
+        }
+}
+}
+@media only screen and (max-width: 820px){
+    .Nav{
+        .navbar{
+
+            button{
+                margin-left: 65vw !important;
+            }
+        }
+}
+}
+@media only screen and (max-width: 656px){
+    .Nav{
+        .navbar{
+
+            button{
+                margin-left: 60vw !important;
+            }
+        }
+}
+}
+@media only screen and (max-width: 547px){
+    .Nav{
+        .navbar{
+
+            button{
+                margin-left: 55vw !important;
+            }
+        }
+}
+}
+@media only screen and (max-width: 469px){
+    .Nav{
+        .navbar{
+
+            button{
+                margin-left: 45vw !important;
+            }
+        }
+}
+}
+@media only screen and (max-width: 365px){
+    .Nav{
+        .navbar{
+
+            button{
+                margin-left: 35vw !important;
+            }
+        }
+}
+}

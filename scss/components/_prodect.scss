@@ -1,0 +1,274 @@
+.productSection {
+    background-color: $color-gray-very-light;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    .container {
+        width: 70vw;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 10vh;
+
+        .card {
+            cursor: pointer;
+            background-color: $color-gray-very-light;
+            border-radius: 10px;
+            border: none;
+            margin: 10px 0;
+
+            .face {
+                width: 250px;
+                height: 200px;
+                transition: 0.5s;
+            }
+
+            .face.face1 {
+                background-color: $color-white;
+                display: flex;
+                justify-content: center;
+                z-index: 1;
+                transform: translateY(50px);
+                border-radius: 15px 15px 0 0;
+                box-shadow: 0 -10px 25px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+
+                .content {
+                    transition: 0.5s;
+                    border: 1px solid $color-gray-very-light;
+
+                    .imgage {
+                        img {
+                            max-width: 300px;
+                            height: 200px;
+                        }
+                    }
+
+                    .detals {
+                        display: flex;
+                        justify-content: space-around;
+
+                        h6 {
+                            margin: 10px 0 0;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+
+            &:hover .face.face1 {
+                transform: translateY(0);
+            }
+
+            .face.face2 {
+                background-color: #fff;
+                display: flex;
+                justify-content: center;
+                padding: 10px;
+                box-sizing: border-box;
+                transform: translateY(-100px);
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+                border-radius: 0 0 10px 10px;
+                text-align: center;
+
+                .content {
+                    p {
+                        margin: 0;
+                        padding-top: 30px;
+                        font-size: 14px;
+                        width: 100%;
+                        margin-bottom: 10px;
+                    }
+
+                    a {
+                        padding: 6px 25px;
+                        color: rgba(255,255,255,1);
+	position: relative;
+    background-color: #3ae374;
+    color: #3d3d3d;
+    width: 16.875rem;
+    height: 4.375rem;
+    font-size: larger;
+    font-weight: 700;
+    transition: all 500ms;
+    border-radius: 15px;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        border: 1px solid rgba(255,255,255,0.5);
+        transition: all 0.3s;
+    }
+    &:hover::before{
+        opacity: 0;
+        transform: scale(1.2,1.2);
+    }
+    &::after{
+        content: 'اضغط هنا';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        opacity: 0;
+        background-color:#3d3d3d;
+        transition: all 0.3s;
+        transform: scale(0.5,0.5);
+        color: #EFE9F4;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+    }
+    &:hover::after{
+        opacity: 1 ;
+        transform: scale(1,1);
+    }
+                    }
+                }
+            }
+
+            &:hover .face.face2 {
+                transform: translateY(0);
+            }
+        }
+    }
+
+    .moreBtn {
+        
+            position: relative;
+            border: 3px solid $color-gray-mid;
+            color: $color-white;
+            background-color: $color-gray-mid;
+            margin: 1.25rem 1.875rem;
+            font-size: larger;
+            font-weight: 700;
+            padding: 10px 20px;
+
+            &:before {
+                content: '';
+                position: absolute;
+                border: $color-gray-mid solid 0.25rem;
+                border-radius: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                transition: all 300ms ease-in-out;
+            }
+
+            &:hover:before {
+                top: -0.9375rem;
+                right: -0.9375rem;
+                bottom: -0.9375rem;
+                left: -0.9375rem;
+            }
+
+
+        
+
+    }
+
+}
+
+div.productSection {
+    background-color: $color-white;
+
+    .container {
+        .card {
+            background-color: $color-white;
+        }
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .productSection {
+        .container {
+            width: 80vw;
+        }
+    }
+}
+
+@media screen and (max-width: 1015px) {
+    .productSection {
+        .container {
+            width: 90vw;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .productSection {
+
+        .container {
+            width: 100vw;
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 10vh;
+
+            .card {
+
+                .face {
+                    width: 320px;
+                    height: 220px;
+                    transition: 0.5s;
+                }
+
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .productSection {
+
+        .container {
+            width: 100vw;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10vh;
+
+            .card {
+
+                .face {
+                    width: 380px;
+                    height: 300px;
+                    transition: 0.5s;
+
+                }
+
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .productSection {
+
+        .container {
+            .card {
+
+                .face {
+                    width: 350px;
+                    height: 230px;
+                    transition: 0.5s;
+                }
+
+            }
+
+        }
+    }
+}

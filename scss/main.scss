@@ -1,0 +1,20 @@
+/* import globale sass file */
+@import "./globals/globale";
+
+/* varibles file */
+@import "./globals/var";
+
+/*import nav sass file */
+@import "./components/nav";
+
+/*footer sass file */
+@import "./components/footer";
+
+/*home scss file */
+@import "./pages/home";
+
+/*Product scss file */
+@import "./components/prodect";
+
+/*cources scss file */
+@import "./pages/cources";

@@ -1,0 +1,102 @@
+
+.cources{
+    margin: 10vh 0 10vh 0 ;
+    .container{
+        margin: 5vh;
+        display: flex;
+        .left{
+            margin: 0 3vw 0 0;
+            img{
+                max-width: 500px !important;
+            }
+        }
+        .right{
+            width: 500px;
+            .courcesTitle{
+                background-color: $color-gray-mid ;
+                color: $color-white;
+                text-align: center;
+                border-radius: 15px;
+                padding: 1vh 0;
+            }
+            p{
+                padding: 3vh 0;
+                text-align: right;
+                font-size: larger;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width :992px) {
+    .cources{
+        margin: 10vh 0 10vh 0 ;
+        .container{
+            margin: 2vh;
+            display: flex;
+            .left{
+                margin: 0 3vw 0 0;
+                img{
+                    width: 40vw !important;
+                }
+            }
+            .right{
+                .courcesTitle{
+                    background-color: $color-gray-mid ;
+                    color: $color-white;
+                    text-align: center;
+                    border-radius: 15px;
+                    padding: 1vh 0;
+                    font-size: 16px;
+                }
+                p{
+                    padding: 1vh 0;
+                    font-size: 12px;
+                }
+            }
+        }
+    
+    }
+}
+@media screen and (max-width :781px) {
+    .cources{
+        margin: 10vh 0 10vh 0 ;
+        
+        .container{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+            margin: 2vh;
+            display: flex;
+            .left{
+                margin: 0 3vw 0 0;
+                img{
+                    width: 95% !important;
+                }
+            }
+            .right{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                .courcesTitle{
+                    width: 95%;
+                    background-color: $color-gray-mid ;
+                    color: $color-white;
+                    text-align: center;
+                    border-radius: 15px;
+                    padding: 1vh 0;
+                    font-size: 20px;
+                }
+                p{
+                    padding: 3vh 0;
+                    font-size: 16px;
+                }
+            }
+        }
+    
+    }
+}

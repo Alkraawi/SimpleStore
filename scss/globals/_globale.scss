@@ -1,0 +1,55 @@
+html,
+body {
+  font-family: 'Varela Round', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none !important;
+  cursor: pointer !important;
+}
+li{
+  list-style: none !important;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.contaner{
+  padding: 0 10%;
+  margin: 0 auto;
+}
+
+.clear {
+  clear: both;
+}
+
+.sectionTitle{
+  text-align: center;
+  margin: 6vh 0 4vh 0;
+  font-weight: 500;
+}
+.backTopBtn{
+  .scrollToTop{
+      background-color: transparent;
+      border: none;
+      bottom: 5vh;
+      right: 3vw;
+      position: fixed;
+      opacity: 30%;
+      z-index: 999;
+
+      &:hover{
+          opacity: 100%;
+      }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contaner{
+    padding: 0 ;
+    margin: 0 ;
+  }
+}
